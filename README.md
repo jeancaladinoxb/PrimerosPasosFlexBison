@@ -4,7 +4,7 @@ Este proyecto contiene ejemplos básico de uso de Flex y Bison para análisis l�
 
 Nombre: Jeancarlo Arturo Rodriguez Ladino
 
-##Contenido 
+## Contenido 
 
 - Ejemplo 01: En el ejemplo 01 se observa un programa básico hecho con Flex y C con el objetivo de permitirle al usuario ingresar por consola alguna frase, número o letra y este le devuelva al finalizar un conteo de lineas usadas, palabras y caracteres.
 
@@ -21,7 +21,10 @@ Nombre: Jeancarlo Arturo Rodriguez Ladino
 ## Ejercicios
 
 1. No se puede porque arroja un error de syntax al momento de comentar en consola ya que el programa no cuenta con una función para comentarlo o ignorar dichos comentarios por usuario
-2. 
+
+2. Para este apartado se agregó un nuevo patron al código de flex el cual permite el reconocimiento de números decimales como lo explica la regla, edición se agrega una función adicional a bison y es que muestre por salida de consola los números decimales y hexadecimales.
+
+3. 
 
 
 
