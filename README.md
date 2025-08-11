@@ -30,6 +30,15 @@ Nombre: Jeancarlo Arturo Rodriguez Ladino
 
 5. Flex no es adecuado para lenguajes cuya tokenización no puede describirse únicamente con expresiones regulares y requiere contexto, anidamiento arbitrario o reglas dinámicas. En casos como Python, Haskell o YAML, donde la indentación forma parte de la sintaxis, el lexer debe mantener una pila de niveles, algo difícil de expresar en Flex. En OCaml o en lenguajes con comentarios anidados sin límite, las expresiones regulares no pueden contar la profundidad, lo que obliga a programar lógica manual compleja. En C o C++, la clasificación de identificadores como tipos o variables depende de la tabla de símbolos, lo que rompe la separación entre análisis léxico y sintáctico. También presenta problemas en lenguajes con gramática léxica cambiante por macros o sintaxis definida por el usuario, como Racket, o con soporte avanzado de Unicode, donde la validez de un identificador depende de propiedades y normalización de caracteres. En todos estos casos, un lexer generado por Flex sería difícil de mantener y menos fiable que un escáner manual o un parser que integre el análisis léxico y sintáctico
 
+6. Para el apartado número 6 se implementó un programa en C el cual tiene la habilidad de poder hacer un escaneo y obtener los datos de cuantas palabras, lineas y caracteres tiene un texto, oración o frase. En adición se le agregó la funcionalidad al programa C y flex de analizar cuanto tiempo tarda este en realizar dicho análisis para poder llegar a una conclusión con respecto a cual es más eficiente en términos de tiempo, se ensayó con un mismo texto largo de aproximadamente 1645 caracteres con el fin de tener un resultado homogéneo por ambas partes.
+
+En donde podemos observar por consola los siguientes resultados
+
+*Flex*: Tardó aproximadamente 0.00 segundos en analizar 1645 caracteres, 295 palabras y 7 lineas 
+
+*C*: Por otro lado C tomo aproximadamente 0.000157 segundos en analizar 1645 caracteres, 295 palabras y 7 lineas 
+
+En donde se logra concluir que Flex es un generador de autómatas muy eficiente para análisis de léxico como se puede comprobar en este experimento realizado, esto debido a la optimización que genera con C. Por último se ve que flex tiene una eficiencia en tiempo muy similar a C siendo estos dos programas eficientes para el conteo de palabras, en adición en la carpeta del ejercicio 6 se encuentra el documento con el cual fue realizado dicho experimento para poder llegar a una conclusión final
 
 
 
