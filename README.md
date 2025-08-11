@@ -32,7 +32,7 @@ Nombre: Jeancarlo Arturo Rodriguez Ladino
 
 6. Para el apartado número 6 se implementó un programa en C el cual tiene la habilidad de poder hacer un escaneo y obtener los datos de cuantas palabras, lineas y caracteres tiene un texto, oración o frase. En adición se le agregó la funcionalidad al programa C y flex de analizar cuanto tiempo tarda este en realizar dicho análisis para poder llegar a una conclusión con respecto a cual es más eficiente en términos de tiempo, se ensayó con un mismo texto largo de aproximadamente 1645 caracteres con el fin de tener un resultado homogéneo por ambas partes.
 
-En donde podemos observar por consola los siguientes resultados
+A continuación podemos observar por consola los siguientes resultados
 
 *Flex*: Tardó aproximadamente 0.00 segundos en analizar 1645 caracteres, 295 palabras y 7 lineas 
 
